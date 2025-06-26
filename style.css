@@ -158,6 +158,9 @@ section {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   filter: grayscale(30%);
   will-change: transform;
+    object-fit: cover;
+  aspect-ratio: 4 / 3;
+  height: 100%;
 }
 
 .gallery img:hover {
@@ -372,4 +375,37 @@ footer {
   position: absolute;
   left: 0;
   color: #3498db;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    margin-top: 80px;
+    min-height: auto;
+  }
+
+  .hero-content {
+    text-align: center;
+    opacity: 1; /* assure que l'animation n'empêche pas l'affichage */
+    animation: none; /* optionnel si ça bugge sur mobile */
+  }
+
+  .hero-photo {
+    width: 90%;
+    height: 200px;
+    border-radius: 15px;
+    animation: none;
+    opacity: 1;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .desc,
+  .citation {
+    font-size: 1rem;
+  }
 }
