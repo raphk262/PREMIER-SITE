@@ -292,9 +292,10 @@ footer {
   gap: 50px;
   margin-top: 120px;
   padding: 40px 20px;
-  overflow: hidden;
-  min-height: 60vh;
+  overflow: visible;
+  min-height: auto;
 }
+
 
 .hero-content {
   max-width: 600px;
