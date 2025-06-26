@@ -400,3 +400,20 @@ footer {
     opacity: 1; /* pour s'assurer qu’elle apparaisse */
   }
 }
+
+@media (max-width: 600px) {
+  .hero {
+    max-height: 250px;  /* limite la hauteur totale */
+    overflow: hidden;   /* coupe ce qui dépasse */
+    padding: 20px 10px;
+  }
+
+  .hero-content {
+    max-height: 250px;  /* même limite */
+    overflow: hidden;
+  }
+
+  .hero-content .citation {
+    display: none; /* optionnel : cacher carrément les citations si tu veux */
+  }
+}
