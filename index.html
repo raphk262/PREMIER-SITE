@@ -2,17 +2,37 @@
 <html lang="fr">
   <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WBQ8ZHLB4K"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WBQ8ZHLB4K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-WBQ8ZHLB4K');
-</script>
+      gtag('config', 'G-WBQ8ZHLB4K');
+    </script>
+
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>R.Kwski Photography</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>R.Kwski Photography - Photographe professionnel à [Ville]</title>
+    <meta name="description" content="R.Kwski Photography capture vos moments précieux à travers des séances photo sur mesure pour événements familiaux, scolaires et collectivités à [Ville]. Contactez-moi !" />
+    <meta name="keywords" content="photographie, photographe professionnel, séance photo, événements familiaux, photos scolaires, collectivités, R.Kwski Photography" />
+    <meta name="author" content="R.Kwski" />
+    <link rel="canonical" href="https://www.rkwski-photography.com/" />
+
+    <!-- Open Graph pour réseaux sociaux -->
+    <meta property="og:title" content="R.Kwski Photography - Photographe professionnel à [Ville]" />
+    <meta property="og:description" content="Capturer des moments précieux avec des séances photo sur mesure pour tous vos événements. Contactez R.Kwski Photography." />
+    <meta property="og:url" content="https://www.rkwski-photography.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.rkwski-photography.com/images/hero-photo.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="R.Kwski Photography - Photographe professionnel à [Ville]" />
+    <meta name="twitter:description" content="Des séances photo personnalisées pour capturer vos plus beaux moments." />
+    <meta name="twitter:image" content="https://www.rkwski-photography.com/images/hero-photo.jpg" />
+
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,54 +40,57 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&family=Roboto+Mono:wght@300;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="/favicon.ico" />
   </head>
   <body>
-    <div class="loader-wrapper">
+    <div class="loader-wrapper" aria-hidden="true">
       <div class="loader"></div>
     </div>
 
     <header>
-      <div class="logo">📸 R.Kwski</div>
-      <nav>
+      <div class="logo" aria-label="Logo R.Kwski Photography">📸 R.Kwski</div>
+      <nav aria-label="Navigation principale">
         <ul>
-          <li><a href="index.html" class="active">Accueil</a></li>
-          <li><a href="galerie.html">Galerie</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="index.html" class="active" aria-current="page" title="Accueil - R.Kwski Photography">Accueil</a></li>
+          <li><a href="galerie.html" title="Galerie photos de R.Kwski Photography">Galerie</a></li>
+          <li><a href="contact.html" title="Contactez R.Kwski Photography">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <!-- Section d'accueil avec texte + image -->
-    <section class="hero">
+    <section class="hero" role="banner" aria-label="Présentation de R.Kwski Photography">
       <div class="hero-content">
         <h1>R.Kwski Photography</h1>
         <p class="desc">Capturer des moments, créer des souvenirs.</p>
         <p class="citation">« La photographie, c’est capturer l’instant qui ne reviendra jamais. »</p>
       </div>
-      <div class="hero-photo"></div>
+      <div class="hero-photo" role="img" aria-label="Photo illustrant la photographie professionnelle"></div>
     </section>
 
-    <section class="services">
-      <h2>Mes Prestations</h2>
-      <p>Je propose des séances photo sur mesure, que ce soit pour des événements privés ou publics :</p>
+    <main>
+      <section class="services" aria-labelledby="services-title">
+        <h2 id="services-title">Mes Prestations</h2>
+        <p>Je propose des séances photo sur mesure, que ce soit pour des événements privés ou publics :</p>
 
-      <ul>
-        <li><strong>🎉 Événements familiaux :</strong> anniversaires, fêtes, baptêmes...</li>
-        <li><strong>🎓 Scolaire & Jeunesse :</strong> photos en milieu scolaire, événements de jeunes...</li>
-        <li><strong>🏛️ Collectivités :</strong> travail avec des mairies, associations ou centres sociaux...</li>
-        <li><strong>📅 Flexibilité :</strong> prestations disponibles le matin ou l’après-midi selon vos besoins.</li>
-      </ul>
+        <ul>
+          <li><strong>🎉 Événements familiaux :</strong> anniversaires, fêtes, baptêmes...</li>
+          <li><strong>🎓 Scolaire &amp; Jeunesse :</strong> photos en milieu scolaire, événements de jeunes...</li>
+          <li><strong>🏛️ Collectivités :</strong> travail avec des mairies, associations ou centres sociaux...</li>
+          <li><strong>📅 Flexibilité :</strong> prestations disponibles le matin ou l’après-midi selon vos besoins.</li>
+        </ul>
 
-      <p>
-        Pour toute demande, contactez-moi directement via
-        <a href="https://www.instagram.com/r_kwski" target="_blank">Instagram</a>.
-      </p>
-    </section>
+        <p>
+          Pour toute demande, contactez-moi directement via
+          <a href="https://www.instagram.com/r_kwski" target="_blank" rel="noopener noreferrer" title="Suivez R.Kwski Photography sur Instagram">Instagram</a>.
+        </p>
+      </section>
+    </main>
 
     <footer>
       <p>&copy; 2025 R.Kwski Photography. Tous droits réservés.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
