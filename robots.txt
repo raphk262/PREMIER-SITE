@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://raphk262.github.io/Photography-R_kwski/sitemap.xml
